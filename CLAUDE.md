@@ -133,7 +133,7 @@ When starting a new project, follow this checklist:
 | Project | Path | Status |
 |---|---|---|
 | `discord-soundbite-bot` | `C:\Users\nrisa\Projects\discord-soundbite-bot` | Active — has CLAUDE.md and README |
-| `life-automation` | `C:\Users\nrisa\Projects\life-automation` | Being rebuilt — run `/brainstorm` to redefine vision |
+| `life-automation` | `C:\Users\nrisa\Projects\life-automation` | Being rebuilt — run `/brainstorm` to redefine vision (archive: branch `archive/original-vision`) |
 | `agents` | `C:\Users\nrisa\Projects\agents` | Needs `/onboard` before working on it |
 
 ## Reference
@@ -142,4 +142,5 @@ When starting a new project, follow this checklist:
 - Power user setup guide and session history: `C:\Users\nrisa\.claude\power-user-setup.md`
 - Peer reference (brother's Claude Code setup — skills, MCP servers, plugins): `C:\Users\nrisa\.claude\peer-reference.md`
   - Consult this when evaluating whether to add a skill or MCP server. Use it for comparison and to identify workflow gaps.
+- Claude Code config repo (public): `https://github.com/nrisacher-lang/claude-config`
 - After adding new skill files to `~/.claude/commands/`, run "Developer: Reload Window" (`Ctrl+Shift+P`) in VS Code for them to appear in the `/` command menu.
