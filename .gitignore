@@ -1,0 +1,23 @@
+# Credentials — never commit
+.credentials.json
+
+# Session memory and personal context — not for public repo
+projects/
+
+# Plan files — session-specific, personal
+plans/
+
+# System directories managed by Claude Code
+logs/
+backups/
+cache/
+debug/
+downloads/
+file-history/
+shell-snapshots/
+todos/
+ide/
+plugins/
+
+# Runtime cache
+mcp-needs-auth-cache.json

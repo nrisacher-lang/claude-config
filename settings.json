@@ -1,0 +1,50 @@
+{
+  "autoUpdatesChannel": "latest",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node C:/Users/nrisa/.claude/hooks/protect-env.js"
+          },
+          {
+            "type": "command",
+            "command": "node C:/Users/nrisa/.claude/hooks/protect-generated.js"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node C:/Users/nrisa/.claude/hooks/prettier-format.js"
+          },
+          {
+            "type": "command",
+            "command": "node C:/Users/nrisa/.claude/hooks/lint-on-edit.js"
+          },
+          {
+            "type": "command",
+            "command": "node C:/Users/nrisa/.claude/hooks/log-tool-usage.js"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node C:/Users/nrisa/.claude/hooks/notify-on-complete.js"
+          }
+        ]
+      }
+    ]
+  }
+}
